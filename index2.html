@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    let student = ["강민", "곽호", "권준", "김주", "김아", "김윤", "김섭", "김진", "노민",
+     "류이", "박재", "박연", "박형", "성경", "이택", "이민", "이권", "임성", "장빈", 
+     "정철", "정은", "정은", "최건", "한진", "진"];
+    console.dir(student);
+    for (let i = 0; i<student.length; i++){
+      let li = document.createElement("li");
+      li.textContent = student[i];
+      root.appendChild(li);
+    }
+  </script>
+</body>
+</html>
